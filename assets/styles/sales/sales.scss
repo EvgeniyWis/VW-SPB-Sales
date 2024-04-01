@@ -49,29 +49,25 @@
 
 // Акции
 .sales {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 0 250px;
     margin-top: 50px;
-    height: 100vh;
+    margin-bottom: 70px;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1500px) {
         padding: 0 100px;
     }
 
-    @media (max-width: 1000px) {
-        padding: 0 10px;
+    @media (max-width: 1200px) {
+        padding: 0 20px;
     }
 
-    &__first_row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 360px;
-        gap: 20px;
-
-        @media (max-width: 700px) {
-            grid-template-columns: 1fr;
-        }
+    @media (max-width: 600px) {
+        padding: 0 10px;
     }
 
     &--item {
@@ -112,7 +108,9 @@
 
             &--img {
                 width: 100%;
-                height: 100%;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
 
                 img,
                 source {
@@ -150,4 +148,46 @@
         }
 
     }
+
+    &__first_row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 360px;
+        gap: 20px;
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__second_row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        min-height: 360px;
+        gap: 20px;
+        width: 100%;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 49%);
+        }
+
+        @media (max-width: 700px) {
+            grid-template-columns: repeat(2, 48%);
+            gap: 10px;
+
+            .sales--item__header,
+            .sales--item__header--img {
+                height: 130px;
+            }
+
+            .sales--item__footer {
+                height: 40px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.sales--active {
+    display: flex;
 }
