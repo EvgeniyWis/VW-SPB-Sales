@@ -9,7 +9,7 @@
   content: "";
   display: block;
   position: absolute;
-  height: 2px;
+  height: 3px;
   width: 0%;
   transition: width 0.3s linear;
   background-color: var(--dark-blue);
