@@ -9,7 +9,7 @@
   content: "";
   display: block;
   position: absolute;
-  height: 3px;
+  height: 2px;
   width: 0%;
   transition: width 0.3s linear;
   background-color: var(--dark-blue);
@@ -43,16 +43,16 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0px;
+  padding: 10px 250px;
   max-width: 100%;
-  gap: 0;
+  gap: 20px;
   color: var(--black);
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   header nav {
-    gap: 10px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
   }
 }
 header nav .logo {
@@ -75,18 +75,14 @@ header nav .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   max-width: 100%;
-}
-@media (max-width: 1500px) {
-  header nav .navbar {
-    gap: 70px;
-  }
 }
 header nav .navbar_phone {
   display: flex;
   gap: 20px;
   width: 100%;
+  white-space: nowrap;
 }
 @media (max-width: 1400px) {
   header nav .navbar_phone {
