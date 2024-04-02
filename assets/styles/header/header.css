@@ -34,12 +34,12 @@ header {
   right: 0;
   left: 0;
   z-index: 3;
+  padding-top: 10px;
   /* Навигация */
 }
 @media (max-width: 500px) {
   header {
     height: 60px;
-    padding-top: 10px;
   }
 }
 header nav {
