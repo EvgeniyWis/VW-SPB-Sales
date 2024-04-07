@@ -27,15 +27,13 @@ header {
   width: 100%;
   order: 0;
   background-color: var(--white);
-  min-height: 93px;
+  height: 93px;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 3;
-  padding-top: 5px;
-  max-height: 105px;
   /* Навигация */
 }
 @media (max-width: 500px) {
