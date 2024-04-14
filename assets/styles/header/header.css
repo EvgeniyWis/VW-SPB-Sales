@@ -107,6 +107,9 @@ header nav .navbar__menu {
 header nav .navbar__menu li {
   cursor: pointer;
 }
+header nav .navbar__menu li:nth-of-type(4) {
+  color: var(--dark-blue);
+}
 header nav .navbar__info {
   display: flex;
   align-items: center;
