@@ -10,7 +10,7 @@ const sales__all = document.getElementById("sales__all");
 const sales__customers = document.getElementById("sales__customers");
 const sales__service = document.getElementById("sales__service");
 const sales__trade_in = document.getElementById("sales__trade_in");
-
+const popup__background = document.getElementById("popup__background");
 
 /* Открытие и закрытие бургер меню */
 navbar__adaptive_menuBurger.addEventListener("click", () => {
