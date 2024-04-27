@@ -23,12 +23,21 @@
   word-spacing: 10px;
   max-width: 100%;
   position: relative;
-  left: 13.5%;
+  padding: 0 250px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1550px) {
   .main_screen .breadcrumbs {
-    left: 3%;
-    margin-top: 0;
+    padding: 10px 100px;
+  }
+}
+@media (max-width: 1300px) {
+  .main_screen .breadcrumbs {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 600px) {
+  .main_screen .breadcrumbs {
+    padding: 50px 10px;
   }
 }
 .main_screen--caption {

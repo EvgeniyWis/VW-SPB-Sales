@@ -23,11 +23,18 @@
         word-spacing: 10px;
         max-width: 100%;
         position: relative;
-        left: 13.5%;
+        padding: 0 250px;
 
-        @media (max-width: 500px) {
-            left: 3%;
-            margin-top: 0;
+        @media (max-width: 1550px) {
+            padding: 10px 100px;
+        }
+
+        @media (max-width: 1300px) {
+            padding: 10px 40px;
+        }
+
+        @media (max-width: 600px) {
+            padding: 50px 10px;
         }
     }
 
